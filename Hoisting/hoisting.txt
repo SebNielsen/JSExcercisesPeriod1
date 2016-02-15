@@ -1,0 +1,42 @@
+In JavaScript, a variable can be declared after it has been used.
+In other words; a variable can be used before it has been declared.
+
+Example
+
+//Declaration is hoisted
+x = 5; // Assign 5 to x
+
+console.log(x);
+
+var x; // Declare x
+
+Hoisting is JavaScript's default behavior of moving all declarations
+to the top of the current scope (to the top of the current script or the current function).
+
+JavaScript only hoists declarations, not initializations.
+
+JavaScript interpreter also allows you to use a function before the point at which it was declared
+in the source code. This is useful because it allows you to express your high-level logic at
+the beginning of your source code rather than the end.
+
+Example
+
+// Outputs: "Yes!"
+isItHoisted();
+
+function isItHoisted() {
+    console.log("Yes!");
+}
+
+However, function definition hoisting only occurs for function declarations, not function
+expressions.
+
+
+Declare Your Variables At the Top !
+Hoisting is (to many developers) an unknown or overlooked behavior of JavaScript.
+
+If a developer doesn't understand hoisting, programs may contain bugs (errors).
+
+To avoid bugs, always declare all variables at the beginning of every scope.
+
+Since this is how JavaScript interprets the code, it is always a good rule.
