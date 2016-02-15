@@ -13,7 +13,7 @@ function foo() { foo(); }
 // specifies the currently executing function) to execute itself.
 var foo = function() { arguments.callee(); };
 
-// This *might* be a self-executing anonymous function, but only while the
+// This "might" be a self-executing anonymous function, but only while the
 // `foo` identifier actually references it. If you were to change `foo` to
 // something else, you'd have a "used-to-self-execute" anonymous function.
 var foo = function() { foo(); };
@@ -43,8 +43,7 @@ var foo = function() { foo(); };
  */
 
 /**
- * Its all about variable scoping. Variables declared in the self executing function are,
- * by default, only available to code within the self executing function. This allows
- * code to be written without concern of how variables are named in other blocks of
- * javascript code.
+ * Variables declared in the self executing function are, by default, only available
+ * to code within the self executing function. This allows code to be written without
+ * concern of how variables are named in other blocks of javascript code.
  */

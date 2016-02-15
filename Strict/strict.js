@@ -29,7 +29,7 @@ strictFunc();  // ReferenceError: strictVar is not defined
 
 Strict mode limits function-related features.
 
-n strict mode, all functions must be declared at the top level of a scope (global scope or
+In strict mode, all functions must be declared at the top level of a scope (global scope or
 directly inside a function). That means that you can’t put a function declaration inside a
 block. If you do, you get a descriptive SyntaxError. For example, V8 tells you: “In strict
 mode code, functions can only be declared at top level or immediately within another function”

@@ -1,7 +1,7 @@
 /**
  * Created by sebastiannielsen on 15/02/2016.
  */
-var createPersonObject = function(name,age){
+var createPerson = function(name,age){
     var person = {name: name, age: age};
     function setAge(value){
         person.age = value;
@@ -19,7 +19,7 @@ var createPersonObject = function(name,age){
     }
 };
 
-var person = createPersonObject("Ole", 27);
+var person = createPerson("Ole", 27);
 
 console.log(person.getInfo());
 
